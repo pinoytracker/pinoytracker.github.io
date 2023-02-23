@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.kepweng2.0" name="KEPWENG2.0" version="0.0.1" provider-name="Team Kepweng">
+	<extension point="xbmc.addon.repository" name="KEPWENG2.0">
+
+		<dir>
+			<info compressed="false">https://github.com/pinoytracker/repository.iamkepweng/raw/main/K20/addons.xml</info>
+			<checksum>https://github.com/pinoytracker/repository.iamkepweng/raw/main/K20/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/pinoytracker/repository.iamkepweng/raw/main/K20</datadir>
+			
+		</dir>
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		</dir>
+
+		<dir>
+			<info compressed="false">http://github.com/cmik/cmik.xbmc/raw/master/addons.xml</info>
+			<checksum>http://github.com/cmik/cmik.xbmc/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">http://github.com/cmik/cmik.xbmc/raw/master/downloads</datadir>
+		</dir>
+
+
+
+
+		
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Bathala Project</summary>
+		<description lang="en">A Private and Personal Project</description>
+		<genre></genre>
+		<assets>
+			<icon>icon.gif</icon>
+			<fanart>fanart.jpg</fanart>      
+			</assets>
+	</extension>
+</addon>
+
+
