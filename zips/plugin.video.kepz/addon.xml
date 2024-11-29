@@ -4,13 +4,11 @@
 	<import addon="xbmc.python" version="3.0.0"/>	
 	<import addon="script.module.resolveurl" version="5.1.92"/>
 	<import addon="script.module.requests" version="2.22.0"/>
-	<import addon="inputstream.ffmpegdirect" minversion="20.5.1"/>
-    <import addon="inputstream.adaptive" minversion="20.3.18"/>
-    <import addon="inputstream.rtmp" minversion="20.3.0"/>
+	<!--import addon="inputstream.ffmpegdirect" minversion="21.0.0"/-->
+    <!--import addon="inputstream.adaptive" minversion="21.0.0"/-->
+    <!--import addon="inputstream.rtmp" minversion="21.0.0"/-->
 	<!--import addon="script.module.addon.common" version="2.0.1"/-->
-	<!-- import addon="repository.kepweng2.0" version="0.0.1"/>
-	<import addon="repository.jsergio" version="1.0.4"/>
-	<import addon="repository.totalrevolution" version="1.0"/ -->
+	<!-- import addon="repository.kepweng2.0" version="0.0.1"/-->
 </requires>
 <extension point="xbmc.python.pluginsource"
 			library="k3pz.py">
