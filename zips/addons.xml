@@ -59,7 +59,6 @@
 	<import addon="xbmc.python" version="3.0.0"/>
 	<import addon="script.module.resolveurl" minversion="5.1.92"/>
 	<import addon="script.module.requests" minversion="2.22.0"/>
-	<import addon="inputstream.adaptive" minversion="21.0.0"/>
 	<!--import addon="inputstream.ffmpegdirect" minversion="21.0.0"/>
     <import addon="inputstream.adaptive" minversion="21.0.0"/>
     <import addon="inputstream.rtmp" minversion="21.0.0"/>
