@@ -38,6 +38,7 @@ def asianc_main():
 	add_dir('f','','','[B][COLOR red]test[/COLOR][/B]','',Fanart)
 
 def Get_Params():
+	import sys
 	args    = sys.argv[2]
 	if len(args)<=2: return
 	text = re.split('[?]',args,1)
