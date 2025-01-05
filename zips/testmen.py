@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 import xbmc, xbmcgui, xbmcplugin, xbmcaddon,requests, xbmcvfs, resolveurl
-import re, os, sys, urllib, urllib.parse
+import re, os, sys, urllib, urllib.parse, inspect
 
 USERDATA_PATH = xbmcvfs.translatePath('special://home/addons/')
 
