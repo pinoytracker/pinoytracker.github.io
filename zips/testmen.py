@@ -4,6 +4,7 @@ import re, os
 
 USERDATA_PATH = xbmcvfs.translatePath('special://home/addons/')
 
+
 def add_dir(dir_type='',mode='',url='',title='',iconimage='',fanart='',description=''):
 	u = sys.argv[0]+"?mode="+str(mode)+"&iconimage="+urllib.parse.quote_plus(iconimage)+"&description="+urllib.parse.quote_plus(description)
 	x=2; num = inspect.getfullargspec(add_dir); i = len(num[0])
@@ -36,5 +37,30 @@ def replace_unicode(text):
 def asianc_main():
 	add_dir('f','','','[B][COLOR red]test[/COLOR][/B]','',Fanart)
 
+def Get_Params():
+	args    = sys.argv[2]
+	if len(args)<=2: return
+	text = re.split('[?]',args,1)
+	params1 = {}
+	params = urllib.parse.parse_qs(text[1])
+	for i in params:
+		x = ''.join(params[i])
+		params1.update({i:x})
+	return params1
 
 
+params = Get_Params()
+mode = None
+
+try: mode = params['mode']
+except: pass
+try: url = params['url']
+except: pass
+try: title = params['title']
+except: pass
+try: thumb = params['iconimage']
+except: pass
+try: bg = params['fanart']
+except: pass
+try: desc = params['description']
+except: pass
