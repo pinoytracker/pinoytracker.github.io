@@ -35,5 +35,5 @@ def replace_unicode(text):
 	return text
 
 def asianc_main():
-	add_dir('f','','','[B][COLOR red]test[/COLOR][/B]','','')
+	add_dir('f','','','[B][COLOR red]test3[/COLOR][/B]','','')
 
