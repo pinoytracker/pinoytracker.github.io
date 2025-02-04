@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon 	id="plugin.video.kapihan" name="KAPIHAN" version="0.1.4" provider-name="BATHALA TRIBU">
+<requires>
+	<!-- import addon="xbmc.python" version="3.0.0"/> -->
+	<import addon="script.module.resolveurl" version="5.1.92"/>
+	<import addon="script.module.requests" version="2.22.0"/>
+	<!--import addon="script.module.addon.common" version="2.0.1"/-->
+	<!-- import addon="repository.kepweng2.0" version="0.0.1"/>
+	<import addon="repository.jsergio" version="1.0.4"/>
+	<import addon="repository.totalrevolution" version="1.0"/ -->
+</requires>
+<extension point="xbmc.python.pluginsource"
+			library="kflix.py">
+		<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en"></summary>
+<description lang="en"></description>
+<platform>all</platform>
+<language>en</language>
+<license>GNU PUBLIC LICENSE. version 2, june 1991</license>
+<assets>
+<icon>icon.png</icon>
+<fanart>fanart.jpg</fanart>
+</assets>
+</extension>
+</addon>
+
+<addon 	id="plugin.video.kepz" name="K3pwengTV" version="0.0.1" provider-name="BATHALA TRIBU">
+<requires>
+	<import addon="xbmc.python" version="3.0.0"/>
+	<import addon="script.module.resolveurl" version="5.1.92"/>
+	<import addon="script.module.requests" version="2.22.0"/>
+	<!--import addon="inputstream.ffmpegdirect" minversion="21.0.0"/-->
+    <!--import addon="inputstream.adaptive" minversion="21.0.0"/-->
+    <!--import addon="inputstream.rtmp" minversion="21.0.0"/-->
+	<!--import addon="script.module.addon.common" version="2.0.1"/-->
+	<!-- import addon="repository.kepweng2.0" version="0.0.1"/-->
+</requires>
+<extension point="xbmc.python.pluginsource"
+			library="k3pz.py">
+		<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en"></summary>
+<description lang="en"></description>
+<platform>all</platform>
+<language>en</language>
+<assets>
+<icon>icon.png</icon>
+<fanart>fanart.jpg</fanart>
+</assets>
+</extension>
+</addon>
+
+<addon 	id="plugin.video.ktala" name="TALA" version="Beta_0.0.1" provider-name="BATHALA TRIBU">
+<requires>
+	<import addon="xbmc.python" version="3.0.0"/>
+	<import addon="script.module.resolveurl" minversion="5.1.92"/>
+	<import addon="script.module.requests" minversion="2.22.0"/>
+	<!--import addon="inputstream.ffmpegdirect" minversion="21.0.0"/>
+    <import addon="inputstream.adaptive" minversion="21.0.0"/>
+    <import addon="inputstream.rtmp" minversion="21.0.0"/>
+	<!import addon="script.module.addon.common" version="2.0.1"/>
+	<import addon="repository.kepweng2.0" version="0.0.1"/>
+	<import addon="repository.jsergio" version="1.0.4"/>
+	<import addon="repository.totalrevolution" version="1.0"/ -->
+</requires>
+<extension point="xbmc.python.pluginsource"
+			library="tala.py">
+		<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en"></summary>
+<description lang="en"></description>
+<platform>all</platform>
+<language>en</language>
+<assets>
+<icon>icon.png</icon>
+<fanart>fanart.jpg</fanart>
+</assets>
+</extension>
+</addon>
+
+<addon 	id="plugin.video.urheart" name="HEARTTV" version="0.0.0.1" provider-name="BATHALA TRIBU">
+<requires>
+	<!-- import addon="xbmc.python" version="3.0.0"/> -->
+	<import addon="script.module.resolveurl" version="5.1.92"/>
+	<import addon="script.module.requests" version="2.22.0"/>
+	<!--import addon="script.module.addon.common" version="2.0.1"/-->
+	<!-- import addon="repository.kepweng2.0" version="0.0.1"/>
+	<import addon="repository.jsergio" version="1.0.4"/>
+	<import addon="repository.totalrevolution" version="1.0"/ -->
+</requires>
+<extension point="xbmc.python.pluginsource"
+			library="heart.py">
+		<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en"></summary>
+<description lang="en"></description>
+<platform>all</platform>
+<language>en</language>
+<license>GNU PUBLIC LICENSE. version 2, june 1991</license>
+<assets>
+<icon>icon.png</icon>
+<fanart>fanart.jpg</fanart>
+</assets>
+</extension>
+</addon>
+
+<addon id="repository.kepweng2.0" name="KEPWENG2.0" version="0.0.1" provider-name="Team Kepweng">
+	<extension point="xbmc.addon.repository" name="KEPWENG2.0">
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/pinoytracker/pinoytracker.github.io/main/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/pinoytracker/pinoytracker.github.io/main/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/pinoytracker/pinoytracker.github.io/main/zips</datadir>
+
+		</dir>
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		</dir>
+
+		<dir>
+			<info compressed="false">http://github.com/cmik/cmik.xbmc/raw/master/addons.xml</info>
+			<checksum>http://github.com/cmik/cmik.xbmc/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">http://github.com/cmik/cmik.xbmc/raw/master/downloads</datadir>
+		</dir>
+
+
+
+
+
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Bathala Project</summary>
+		<description lang="en">A Private and Personal Project</description>
+		<genre></genre>
+		<assets>
+			<icon>icon.gif</icon>
+			<fanart>fanart.jpg</fanart>
+			</assets>
+	</extension>
+</addon>
+</addons>
