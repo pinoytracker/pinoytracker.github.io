@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <addons>
 <addon 	id="plugin.video.kapihan" name="KAPIHAN" version="0.1.4" provider-name="BATHALA TRIBU">
 <requires>
@@ -32,6 +32,7 @@
 	<import addon="xbmc.python" version="3.0.0"/>
 	<import addon="script.module.resolveurl" version="5.1.92"/>
 	<import addon="script.module.requests" version="2.22.0"/>
+	<import addon="inputstream.adaptive" minversion="21.5.9"/>
 	<!--import addon="inputstream.ffmpegdirect" minversion="21.0.0"/-->
     <!--import addon="inputstream.adaptive" minversion="21.0.0"/-->
     <!--import addon="inputstream.rtmp" minversion="21.0.0"/-->
@@ -59,6 +60,7 @@
 	<import addon="xbmc.python" version="3.0.0"/>
 	<import addon="script.module.resolveurl" minversion="5.1.92"/>
 	<import addon="script.module.requests" minversion="2.22.0"/>
+	<import addon="inputstream.adaptive" minversion="21.5.9"/>
 	<!--import addon="inputstream.ffmpegdirect" minversion="21.0.0"/>
     <import addon="inputstream.adaptive" minversion="21.0.0"/>
     <import addon="inputstream.rtmp" minversion="21.0.0"/>
@@ -146,5 +148,34 @@
 			<fanart>fanart.jpg</fanart>
 			</assets>
 	</extension>
+</addon>
+
+<addon id="script.module.requests"
+       name="requests"
+       version="2.22.0"
+       provider-name="kennethreitz">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.urllib3" version="1.25.6"/>
+    <import addon="script.module.chardet" version="3.0.4"/>
+    <import addon="script.module.idna" version="2.8"/>
+    <import addon="script.module.certifi" version="2019.9.11"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Python HTTP for Humans</summary>
+    <description lang="en_GB">Packed for KODI from https://pypi.org/project/requests/</description>
+    <platform>all</platform>
+    <language></language>
+    <license>Apache2</license>
+    <forum></forum>
+    <website>http://python-requests.org</website>
+    <source>https://github.com/Freso/script.module.requests</source>
+    <email>freso.dk AT gmail.com</email>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 </addons>
