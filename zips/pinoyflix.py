@@ -34,14 +34,15 @@ def scrape_main():
 	main_regex = r'<div class="main-container">(.+?)<h3 class="widget-title">'
 	main_block = re.compile(main_regex,re.DOTALL).findall(str(html))
 
-	#return main_block
+	return main_block
 
 	#xbmc.log('pflix_main######################################################### '+str(pflix_main_block),2)
 
-	pbin_flix_main_regex = r'<div class="featured-wrap clearfix">.+?<a href="(.+?)".+?><img.+?src="(.+?)".+?<h2 class="title.+?<a href.+?>(.+?)</a>'
-	pbin_flix_main_block = re.compile(pbin_flix_main_regex,re.DOTALL).findall(str(main_block))
+	
+	#pbin_flix_main_regex = r'<div class="featured-wrap clearfix">.+?<a href="(.+?)".+?><img.+?src="(.+?)".+?<h2 class="title.+?<a href.+?>(.+?)</a>'
+	#pbin_flix_main_block = re.compile(pbin_flix_main_regex,re.DOTALL).findall(str(main_block))
 
-	return pbin_flix_main_block
+	#return pbin_flix_main_block
 
 
 	#pbin_block1_regex = r'<match>(.+?)</match>'
