@@ -47,7 +47,9 @@ def scrape_main():
 	for url,image,title in pbin_flix_main_block:
 		sources = '<name>'+title+'</name><icon>'+image+'</icon><url>'+url+'</url>'
 		source.append(sources)
-	return source
+
+	data = str(source)	
+	return data
 
 
 
