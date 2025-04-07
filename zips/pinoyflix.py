@@ -38,8 +38,11 @@ def scrape_main():
 
 	#xbmc.log('pflix_main######################################################### '+str(pflix_main_block),2)
 
-	#pbin_flix_main_regex = r'<regex_main>(.+?)</regex_main>'
-	#pbin_flix_main_block = re.compile(pbin_flix_main_regex,re.DOTALL).findall(str(pflix_main_block))[0]
+	pbin_flix_main_regex = r'<div class="featured-wrap clearfix">.+?<a href="(.+?)".+?><img.+?src="(.+?)".+?<h2 class="title.+?<a href.+?>(.+?)</a>'
+	pbin_flix_main_block = re.compile(pbin_flix_main_regex,re.DOTALL).findall(str(main_block))
+
+	return pbin_flix_main_block
+
 
 	#pbin_block1_regex = r'<match>(.+?)</match>'
 	#pbin_flix_block1 = re.compile(pbin_block1_regex,re.DOTALL).findall(str(pflix_main_block))[0]
