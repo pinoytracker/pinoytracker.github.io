@@ -42,7 +42,13 @@ def scrape_main():
 	pbin_flix_main_regex = r'<div class="featured-wrap clearfix">.+?<a href="(.+?)".+?><img.+?src="(.+?)".+?<h2 class="title.+?<a href.+?>(.+?)</a>'
 	pbin_flix_main_block = re.compile(pbin_flix_main_regex,re.DOTALL).findall(str(main_block))
 
-	return pbin_flix_main_block
+	for url,image,title in pbin_flix_main_block:
+		return url
+		return image
+		return title
+
+
+	#return pbin_flix_main_block
 
 
 	#pbin_block1_regex = r'<match>(.+?)</match>'
