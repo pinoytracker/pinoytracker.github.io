@@ -29,6 +29,7 @@ def scrape_main(url):
 	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36'}
 	Readit = requests.get('https://pinoysflixlambingan.su/',headers=headers)
 	html = Readit.text
+	return html
 
 	#xbmc.log('pflix_main######################################################### '+str(pflix_main_block),2)
 
