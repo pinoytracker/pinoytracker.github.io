@@ -29,7 +29,13 @@ def scrape_main():
 	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36'}
 	Readit = requests.get('https://pinoysflixlambingan.su/',headers=headers)
 	html = Readit.text
-	return html
+
+
+	main_regex = r'<div class="main-container">(.+?)<h3 class="widget-title">'
+	main_block = re.compile(main_regex,re.DOTALL).findall(str(html))
+
+
+	return main_block
 
 	#xbmc.log('pflix_main######################################################### '+str(pflix_main_block),2)
 
