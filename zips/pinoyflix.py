@@ -25,7 +25,7 @@ def replace_unicode(text):
 
 #send_log(block2,'BLOCK2')
 
-def scrape_main(url):
+def scrape_main():
 	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36'}
 	Readit = requests.get('https://pinoysflixlambingan.su/',headers=headers)
 	html = Readit.text
