@@ -34,7 +34,7 @@ def scrape_main():
 	main_regex = r'<div class="main-container">(.+?)<h3 class="widget-title">'
 	main_block = re.compile(main_regex,re.DOTALL).findall(str(html))
 
-	return main_block
+	#return main_block
 
 	#xbmc.log('pflix_main######################################################### '+str(pflix_main_block),2)
 
