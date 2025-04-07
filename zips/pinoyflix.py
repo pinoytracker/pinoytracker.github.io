@@ -48,7 +48,7 @@ def scrape_main():
 		sources = '<name>'+title+'</name><icon>'+image+'</icon><url>'+url+'</url>'
 		source.append(sources)
 
-	data = replace_unicode(source)
+	data = replace_unicode(str(source))
 	return data
 
 
