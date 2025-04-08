@@ -120,6 +120,7 @@ def get_p_links(url):
 	# 	#xbmc.log('pbin_main_listmatch######################################################### '+str(pbin_main_listmatch),2)
 	# 	#thisRegex =r'<h2 style=\"text-align(.+?)<div id="recent-posts-2'
 		Regex_me = re.compile(main_listmatch,re.DOTALL).findall(str(html))
+		xbmc.log('lRegex_me######################################################## '+str(Regex_me),2)
 
 		for link in Regex_me:
 			source = '<url>'+link+'</url>'
