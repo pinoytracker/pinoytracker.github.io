@@ -92,4 +92,39 @@ def scrape_main():
 	#return sources
 	#xbmc.log('sources######################################################### '+str(sources),2)
 	
+def get_p_links(url):
+	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36'}
+	Readit = requests.get(url,headers=headers)
+	html = Readit.content
+	Sources = []
+	new_sources = []
+	#html = html.decode('utf-8')
+	#xbmc.log('HTMLPINOYFLIX######################################################### '+str(html),2)
+
+
+	blocklinks_regex = r'<div class="main-container">(.+?)<span>Leave a Reply</span>'
+	main_block = re.compile(blocklinks_regex,re.DOTALL).findall(str(html))[0]
+	#xbmc.log('Regex_main_block######################################################### '+str(html),2)
+
+	if "<strong>Coming Soon</strong>" in main_block:
+		source = '<url>COMING SOON</url>'
+		xbmc.log('SOURCE######################################################### '+str(source),2)
+		#else:
+		#	source = '<url>NO LINKS FOUND</url>'
+		Sources.append(source)
+		#xbmc.log('SOURCES######################################################### '+str(sources),2)
+	else:
+
+		listmatch_regex = r'<[iI][fF][rR][aA][mM][eE].+?[sS][rR][cC]="(.+?)"'
+		main_listmatch = re.compile(listmatch_regex,re.DOTALL).findall(str(main_block))[0]
+	# 	#xbmc.log('pbin_main_listmatch######################################################### '+str(pbin_main_listmatch),2)
+	# 	#thisRegex =r'<h2 style=\"text-align(.+?)<div id="recent-posts-2'
+		Regex_me = re.compile(pbin_main_listmatch,re.DOTALL).findall(str(html))
+
+		for link in Regex_me:
+			source = '<url>'+link+'</url>'
+			xbmc.log('link_source######################################################## '+str(source),2)
+			Sources.append(source)
+	new_sources = Sources
+	return new_sources
 
