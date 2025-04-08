@@ -128,6 +128,6 @@ def get_p_links(url):
 			xbmc.log('link_source ######################################################## '+str(links),2)
 			Sources.append(links)
 	
-	Data = str(Sources)
+	Data = (str(Sources))
 	return Data
 
