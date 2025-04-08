@@ -96,7 +96,7 @@ def get_p_links(url):
 	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36'}
 	Readit = requests.get(url,headers=headers)
 	html = Readit.content
-	Sources = []
+	#Sources = []
 	#new_sources = []
 	#html = html.decode('utf-8')
 	#xbmc.log('HTMLPINOYFLIX######################################################### '+str(html),2)
@@ -124,9 +124,10 @@ def get_p_links(url):
 		xbmc.log('Regex######################################################## '+str(main_listmatch),2)
 
 		for link in main_listmatch:
-			source = '<url>'+link+'</url>'
-			xbmc.log('link_source ######################################################## '+str(source),2)
-			Sources.append(source)
-	new_sources = str(Sources)
-	return new_sources
+			#source = '<url>'+link+'</url>'
+			xbmc.log('link_source ######################################################## '+str(link),2)
+			#Sources.append(source)
+	
+	#new_sources = str(Sources)
+	#return new_sources
 
