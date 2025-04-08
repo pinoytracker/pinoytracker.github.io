@@ -114,20 +114,19 @@ def get_p_links(url):
 		Sources.append(source)
 		#xbmc.log('SOURCES######################################################### '+str(sources),2)
 	else:
-
 		listmatch_regex = r'<[iI][fF][rR][aA][mM][eE].+?[sS][rR][cC]="(.+?)"'
 		main_listmatch = re.compile(listmatch_regex,re.DOTALL).findall(str(main_block))
 	# 	#xbmc.log('pbin_main_listmatch######################################################### '+str(pbin_main_listmatch),2)
 	# 	#thisRegex =r'<h2 style=\"text-align(.+?)<div id="recent-posts-2'
-		Regex_me = re.compile(main_listmatch,re.DOTALL).findall(str(html))
-		xbmc.log('Regex######################################################## '+str(Regex_me),2)
+	#	Regex_me = re.compile(main_listmatch,re.DOTALL).findall(str(html))
+		xbmc.log('Regex######################################################## '+str(main_listmatch),2)
 
-		for link in Regex_me:
-			source = '<url>'+link+'</url>'
+	#	for link in Regex_me:
+	#		source = '<url>'+link+'</url>'
 			#xbmc.log('link_source######################################################## '+str(source),2)
-			Sources.append(source)
+	#		Sources.append(source)
 	#new_sources = str(Sources)
 	#return new_sources
-	data = str(Sources)
-	return data
+	#data = str(Sources)
+	#return data
 
