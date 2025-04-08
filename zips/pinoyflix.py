@@ -126,6 +126,6 @@ def get_p_links(url):
 			xbmc.log('link_source######################################################## '+str(source),2)
 			Sources.append(source)
 	new_sources = Sources
-	return new_sources
+	return Regex_me
 	#return main_block
 
