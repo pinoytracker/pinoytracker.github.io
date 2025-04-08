@@ -110,7 +110,7 @@ def get_p_links(url):
 
 	if "<strong>Coming Soon</strong>" in main_block:
 		source = '<url>COMING SOON</url>'
-		xbmc.log('SOURCE######################################################### '+str(source),2)
+		xbmc.log('SOURCE ######################################################### '+str(source),2)
 		#else:
 		#	source = '<url>NO LINKS FOUND</url>'
 		Sources.append(source)
