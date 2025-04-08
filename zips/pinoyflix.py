@@ -92,7 +92,7 @@ def scrape_main():
 	#return sources
 	#xbmc.log('sources######################################################### '+str(sources),2)
 	
-def get_p_links(url):
+def get_p_links():
 	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36'}
 	Readit = requests.get(url,headers=headers)
 	html = Readit.content
