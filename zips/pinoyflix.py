@@ -97,7 +97,7 @@ def get_p_links(url):
 	Readit = requests.get(url,headers=headers)
 	html = Readit.content
 	Sources = []
-	new_sources = []
+	#new_sources = []
 	#html = html.decode('utf-8')
 	#xbmc.log('HTMLPINOYFLIX######################################################### '+str(html),2)
 
