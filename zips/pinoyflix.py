@@ -128,5 +128,5 @@ def get_p_links(url):
 	#		Sources.append(source)
 	#new_sources = str(Sources)
 	#return new_sources
-	return Regex_me
+	return str(Regex_me)
 
