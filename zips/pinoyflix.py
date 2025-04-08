@@ -122,12 +122,12 @@ def get_p_links(url):
 		Regex_me = re.compile(main_listmatch,re.DOTALL).findall(str(html))
 		xbmc.log('Regex######################################################## '+str(Regex_me),2)
 
-	#	for link in Regex_me:
-	#		source = '<url>'+link+'</url>'
+		for link in Regex_me:
+			source = '<url>'+link+'</url>'
 			#xbmc.log('link_source######################################################## '+str(source),2)
-	#		Sources.append(source)
+			Sources.append(source)
 	#new_sources = str(Sources)
 	#return new_sources
-	data = str(Regex_me)
+	data = str(Sources)
 	return data
 
