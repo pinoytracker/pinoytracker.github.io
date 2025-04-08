@@ -106,7 +106,7 @@ def get_p_links(url):
 	main_block = re.compile(blocklinks_regex,re.DOTALL).findall(str(html))[0]
 	#listmatch_regex = r'<[iI][fF][rR][aA][mM][eE].+?[sS][rR][cC]="(.+?)"'
 	#main_listmatch = re.compile(listmatch_regex,re.DOTALL).findall(str(main_block))
-	xbmc.log('Regex_main_block######################################################### '+str(main_listmatch),2)
+	xbmc.log('Regex_main_block ######################################################### '+str(main_listmatch),2)
 
 	if "<strong>Coming Soon</strong>" in main_block:
 		source = '<url>COMING SOON</url>'
@@ -125,7 +125,7 @@ def get_p_links(url):
 
 		for link in main_listmatch:
 			source = '<url>'+link+'</url>'
-			xbmc.log('link_source######################################################## '+str(source),2)
+			xbmc.log('link_source ######################################################## '+str(source),2)
 			Sources.append(source)
 	new_sources = str(Sources)
 	return new_sources
