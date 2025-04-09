@@ -75,7 +75,7 @@ def get_p_links(url):
 	#xbmc.log('HTMLPINOYFLIX######################################################### '+str(html),2)
 
 
-	blocklinks_regex = r'<div class="main-container">(.+?)<span>Leave a Reply</span>'
+	blocklinks_regex = r'<div class="main-container">(.+?)Leave a Reply'
 	main_block = re.compile(blocklinks_regex,re.DOTALL).findall(str(html))[0]
 	#listmatch_regex = r'<[iI][fF][rR][aA][mM][eE].+?[sS][rR][cC]="(.+?)"'
 	#main_listmatch = re.compile(listmatch_regex,re.DOTALL).findall(str(main_block))
@@ -103,4 +103,6 @@ def get_p_links(url):
 		xbmc.log('Sources ######################################################## '+str(Sources),2)
 	
 	return Sources
+
+
 
