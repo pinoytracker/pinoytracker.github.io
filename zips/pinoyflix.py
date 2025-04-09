@@ -51,6 +51,8 @@ def scrape_main():
 
 	np = re.compile('<a class="next page-numbers" href="(.+?)"><i class=' ,re.DOTALL).findall(html)
 	#np = re.compile(pbin_np_block,re.DOTALL).findall(html)
+
+	xbmc.log('np ######################################################### '+str(np),2)
 	
 	for url in np:
 		url = '<nextpage>nextpagepflix/'+url+'</nextpage>'
