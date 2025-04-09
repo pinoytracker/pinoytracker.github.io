@@ -48,46 +48,17 @@ def scrape_main():
 		sources = '<name>'+title+'</name><icon>'+image+'</icon><url>'+url+'</url>'
 		source.append(sources)
 
-	data = (str(source))
-	new_data = replace_unicode(data)
-	return new_data
 
-
-
-	#return pbin_flix_main_block
-
-
-	#pbin_block1_regex = r'<match>(.+?)</match>'
-	#pbin_flix_block1 = re.compile(pbin_block1_regex,re.DOTALL).findall(str(pflix_main_block))[0]
-	#xbmc.log('pflix_main_block ######################################################### '+str(pbin_flix_block1),2)
-
-	
-	
-	#mainblock = re.compile('<div class="main-container">(.+?)<h3 class="widget-title">',re.DOTALL).findall(html)
-	#mainblock = re.compile(pbin_flix_main_block,re.DOTALL).findall(html)
-	#block1 = re.compile('<div class="featured-wrap clearfix">.+?<a href="(.+?)".+?><img.+?src="(.+?)".+?<h2 class="title.+?<a href.+?>(.+?)</a>',re.DOTALL).findall(str(mainblock))
-	#block1 = re.compile(pbin_flix_block1,re.DOTALL).findall(str(mainblock))
-
-	#sources = []
-
-	#for url,icon,name in block1:
-	#	p_url = '[pinoystvflix]'
-	#	name = name.replace('&#8217;','\'').replace('&#8211;','-').replace('&#039;','\'').replace('&#038;','&').replace('&#8230;','...').replace('\\t\\t','')
-	#	source = '<name>'+name+'</name><icon>'+icon+'</icon><url>'+p_url+url+'</url>'
-	#	sources.append(source)
-	
-
-	
-	#npblock = re.compile('<div class="pagination">(.+?)</div>',re.DOTALL).findall(html)
-	#pbin_np_regex = r'<np>(.+?)</np>'
-	#pbin_np_block = re.compile(pbin_np_regex,re.DOTALL).findall(str(pflix_main_block))[0]
-
-	#np = re.compile('<a class="next page-numbers" href="(.+?)"><i class=' ,re.DOTALL).findall(html)
+	np = re.compile('<a class="next page-numbers" href="(.+?)"><i class=' ,re.DOTALL).findall(html)
 	#np = re.compile(pbin_np_block,re.DOTALL).findall(html)
 	
-	#for url in np:
-	#	url = '<nextpage>nextpagepflix/'+url+'</nextpage>'
-	#	sources.append(url)
+	for url in np:
+		url = '<nextpage>nextpagepflix/'+url+'</nextpage>'
+		source.append(url)
+
+	data = (str(source))
+	new_data = replace_unicode(data)
+	return new_data	
 
 	#return sources
 	#xbmc.log('sources######################################################### '+str(sources),2)
