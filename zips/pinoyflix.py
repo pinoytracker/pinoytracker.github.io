@@ -105,4 +105,45 @@ def get_p_links(url):
 	return Sources
 
 
+def scrape_pinoysflix():
+	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36'}
+	Readit = requests.get('https://pinoyflixs.com/',headers=headers)
+	html = Readit.text
+
+
+	main_regex = r'<div class="main-container">(.+?)<h3 class="widget-title">'
+	main_block = re.compile(main_regex,re.DOTALL).findall(str(html))
+
+	#return main_block
+
+	#xbmc.log('pflix_main######################################################### '+str(pflix_main_block),2)
+
+	
+	pbin_flix_main_regex = r'<div class="featured-wrap clearfix">.+?<a href="(.+?)".+?><img.+?src="(.+?)".+?<h2 class="title.+?<a href.+?>(.+?)</a>'
+	pbin_flix_main_block = re.compile(pbin_flix_main_regex,re.DOTALL).findall(str(main_block))
+
+	source = []
+
+	for url,image,title in pbin_flix_main_block:
+		sources = '<name>'+title+'</name><icon>'+image+'</icon><url>'+url+'</url>'
+		source.append(sources)
+
+
+	np = re.compile('<a class="next page-numbers" href="(.+?)"><i class=' ,re.DOTALL).findall(str(html))
+	#np = re.compile(pbin_np_block,re.DOTALL).findall(html)
+
+	xbmc.log('np ######################################################### '+str(np),2)
+	
+	for url in np:
+		url = '<nextpage>nextpagepflix/'+url+'</nextpage>'
+		source.append(url)
+
+	data = (str(source))
+	new_data = replace_unicode(data)
+	return new_data	
+
+	#return sources
+	#xbmc.log('sources######################################################### '+str(sources),2)
+
+
 
