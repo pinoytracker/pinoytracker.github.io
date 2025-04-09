@@ -49,7 +49,7 @@ def scrape_main():
 		source.append(sources)
 
 
-	np = re.compile('<a class="next page-numbers" href="(.+?)"><i class=' ,re.DOTALL).findall(html)
+	np = re.compile('<a class="next page-numbers" href="(.+?)"><i class=' ,re.DOTALL).findall(str(html))
 	#np = re.compile(pbin_np_block,re.DOTALL).findall(html)
 
 	xbmc.log('np ######################################################### '+str(np),2)
