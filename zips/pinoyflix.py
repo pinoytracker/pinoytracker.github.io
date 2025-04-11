@@ -210,4 +210,10 @@ def scrape_nextpage_pinoysflix(url):
 	new_data = replace_unicode(data)
 	return new_data
 
+def scrape_play_vkhost(url):
+	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36'}
+	Readit = requests.get(url,headers=headers)
+	html = Readit.text
+	xbmc.log('HTML ######################################################### '+str(html),2)
+	return html
 
