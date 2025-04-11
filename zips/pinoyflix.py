@@ -211,7 +211,7 @@ def scrape_nextpage_pinoysflix(url):
 	return new_data
 
 def scrape_play_vkhost(url):
-	xbmc.log('URL ######################################################### '+str(url),2)
+	xbmc.log('URL play_vkhost ######################################################### '+str(url),2)
 	headers = {
 		'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
 		'accept-language': 'en-US,en;q=0.9,fil;q=0.8,ko;q=0.7',
