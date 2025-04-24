@@ -210,6 +210,46 @@ def scrape_nextpage_pinoysflix(url):
 	new_data = replace_unicode(data)
 	return new_data
 
+
+
+def scrape_pinoyteleseryehdtv():
+	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36'}
+	Readit = requests.get('https://pinoyteleseryehdtv.su/',headers=headers)
+	html = Readit.text
+
+	main_regex = r'<div class="main-container">(.+?)<h3 class="widget-title">'
+	main_block = re.compile(main_regex,re.DOTALL).findall(str(html))
+
+	pbin_flix_main_regex = r'<div class="featured-wrap clearfix">.+?<a href="(.+?)".+?<img.+?src="(.+?)".+?<h2 class="title.+?<a href.+?>(.+?)</a>'
+	pbin_flix_main_block = re.compile(pbin_flix_main_regex,re.DOTALL).findall(str(main_block))
+
+	source = []
+
+	for url,image,title in pbin_flix_main_block:
+		sources = '<name>'+title+'</name><icon>'+image+'</icon><url>'+url+'</url>'
+		source.append(sources)
+
+
+	np = re.compile('<a class="next page-numbers" href="(.+?)"><i class=' ,re.DOTALL).findall(str(html))
+	#np = re.compile(pbin_np_block,re.DOTALL).findall(html)
+
+	xbmc.log('np ######################################################### '+str(np),2)
+	
+	for url in np:
+		url = '<nextpage>nextpagepinoysflix/'+url+'</nextpage>'
+		source.append(url)
+
+	data = (str(source))
+	new_data = replace_unicode(data)
+	return new_data	
+
+
+
+
+
+
+
+
 def scrape_play_vkhost(url):
 	xbmc.log('URL play_vkhost ######################################################### '+str(url),2)
 	headers = {
