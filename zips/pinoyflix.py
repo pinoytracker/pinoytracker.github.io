@@ -141,7 +141,7 @@ def get_p_links(url):
 
 def scrape_pinoysflix():
 	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36'}
-	Readit = requests.get('https://pinoyflixs.com/',headers=headers)
+	Readit = requests.get('https://pinoytvflixhd.su/',headers=headers)
 	html = Readit.text
 
 
@@ -153,7 +153,7 @@ def scrape_pinoysflix():
 	#xbmc.log('pflix_main######################################################### '+str(pflix_main_block),2)
 
 	
-	pbin_flix_main_regex = r'<div class="featured-wrap clearfix">.+?<a href="(.+?)".+?><img.+?src="(.+?)".+?<h2 class="title.+?<a href.+?>(.+?)</a>'
+	pbin_flix_main_regex = r'<div class="featured-wrap clearfix">.+?<a href="(.+?)".+?<img.+?src="(.+?)".+?<h2 class="title.+?<a href.+?>(.+?)</a>'
 	pbin_flix_main_block = re.compile(pbin_flix_main_regex,re.DOTALL).findall(str(main_block))
 
 	source = []
