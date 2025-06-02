@@ -22,9 +22,9 @@
     }
   ],
   "scraper_map": {
-    "pinoysflixlambingan.su": "scraper_pinoysflix.scrape",
-    "pinoytvflixhd.su": "scraper_pinoytvflix.scrape",
-    "pinoyteleseryehdtv.su": "scraper_pinoyteleseryehd.scrape",
-    "pinoylive.su": "scraper_pinoyteleseryesu.scrape"
+    "pinoysflixlambingan.su": "resources.lib.scraper_pinoysflix.scrape",
+    "pinoytvflixhd.su": "resources.lib.scraper_pinoytvflix.scrape",
+    "pinoyteleseryehdtv.su": "resources.lib.scraper_pinoyteleseryehd.scrape",
+    "pinoylive.su": "resources.lib.scraper_pinoyteleseryesu.scrape"
   }
 }
