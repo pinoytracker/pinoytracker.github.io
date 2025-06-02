@@ -1,29 +1,30 @@
-initial_pages = [
+{
+  "initial_pages": [
     {
-        'url': 'https://pinoysflixlambingan.su/',
-        'label': 'PINOYSFLIXLAMBINGAN',
-        'color': 'goldenrod'
+      "url": "https://pinoysflixlambingan.su/",
+      "label": "PINOYSFLIXLAMBINGAN",
+      "color": "goldenrod"
     },
     {
-        'url': 'https://pinoytvflixhd.su/',
-        'label': 'PINOYTVFLIX',
-        'color': 'coral'
+      "url": "https://pinoytvflixhd.su/",
+      "label": "PINOYTVFLIX",
+      "color": "coral"
     },
     {
-        'url': 'https://pinoyteleseryehdtv.su/',
-        'label': 'PINOYTELESERYEHD',
-        'color': 'tan'
+      "url": "https://pinoyteleseryehdtv.su/",
+      "label": "PINOYTELESERYEHD",
+      "color": "tan"
     },
     {
-        'url': 'https://www.pinoylive.su/api/articles.php?page=1',
-        'label': 'PINOYLIVE',
-        'color': 'hotpink'
-    } 
-]
-
-scraper_map = {
-    'pinoysflixlambingan.su': scraper_pinoysflix.scrape,
-    'pinoytvflixhd.su': scraper_pinoytvflix.scrape,
-    'pinoyteleseryehdtv.su': scraper_pinoyteleseryehd.scrape,
-    'pinoylive.su': scraper_pinoyteleseryesu.scrape,
+      "url": "https://www.pinoylive.su/api/articles.php?page=1",
+      "label": "PINOYLIVE",
+      "color": "hotpink"
+    }
+  ],
+  "scraper_map": {
+    "pinoysflixlambingan.su": "scraper_pinoysflix.scrape",
+    "pinoytvflixhd.su": "scraper_pinoytvflix.scrape",
+    "pinoyteleseryehdtv.su": "scraper_pinoyteleseryehd.scrape",
+    "pinoylive.su": "scraper_pinoyteleseryesu.scrape"
+  }
 }
