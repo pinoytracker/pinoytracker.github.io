@@ -1,10 +1,12 @@
 [
   {
-    "title": "Uninvited",
-    "poster": "https://image.tmdb.org/t/p/original/dOEr27N5JKx6mdqKykTtyM8ytsI.jpg"
+     "title": "Uninvited",
+    "poster": "https://image.tmdb.org/t/p/original/dOEr27N5JKx6mdqKykTtyM8ytsI.jpg",
+      "plot": "Eva seeks revenge on billionaire Guilly for killing her daughter. Disguised, she attends his party with a vengeful plan."
   },
   {
     "title": "Rewind",
-    "poster": "https://image.tmdb.org/t/p/original/vW80VheMJhHsj0pDVYJL3qAMWMd.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/vW80VheMJhHsj0pDVYJL3qAMWMd.jpg",
+    "plot": "Mary loves John for as long as she can remember. But after years of marriage, John's priorities shift, leading to a strained relationship with Mary, which causes a tragic accident that takes away Mary's life. Until one day, John gets an extraordinary proposition - to rewind time and save the life of the woman he loves."
   }
 ]
