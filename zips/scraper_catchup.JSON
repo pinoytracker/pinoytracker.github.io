@@ -14,6 +14,13 @@
         "icon": "https://image.tmdb.org/t/p/original/8jdXvKWFllqPCD83Yv52WXeWn2N.jpg"
     },
     {
+        "nme": "sins-of-the-father",
+        "nme2": "Sins of the Father",
+        "tid": "tblTXyBRkm0yiBxCV",
+        "bid":"appbKJpwrNVjae5Jo",
+        "icon": "https://www.imdb.com/title/tt36326616/mediaviewer/rm2846800130/?ref_=tt_ov_i"
+    },
+    {
         "nme": "saving-grace-the-untold-story",
         "nme2": "SAVING GRACE",
         "tid": "tblVfYmYnwvRGluVs",
@@ -33,5 +40,12 @@
         "tid": "tblJ1Im1x2hlKyQ7G",
         "bid":"appdOU3dmXWhNr7c8",
         "icon": "https://image.tmdb.org/t/p/original/wV7wP3p8iJ3ES8mmmucWxoDluu4.jpg"
+    },
+    {
+        "nme": "encantadia-chronicles-sanggre",
+        "nme2": "ENCANTADIA CHRONICLES SANGRE",
+        "tid": "tblN4qWZ1KS8uxQtw",
+        "bid":"appdOU3dmXWhNr7c8",
+        "icon": "https://image.tmdb.org/t/p/original/mvUwDE7rb09P2SJeOqFuu0q48Th.jpg"
     }
 ]
