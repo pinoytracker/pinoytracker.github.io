@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon 	id="plugin.video.kapihan" name="KAPIHAN" version="0.1.4" provider-name="BATHALA TRIBU">
+<addon 	id="plugin.video.kapihan" name="KAPIHAN" version="0.1.7" provider-name="BATHALA TRIBU">
 <requires>
 	<!-- import addon="xbmc.python" version="3.0.0"/> -->	
 	<import addon="script.module.resolveurl" version="5.1.92"/>
 	<import addon="script.module.requests" version="2.22.0"/>
+	<import addon="script.module.beautifulsoup4" version="4.12.2"/>
+	<import addon="plugin.airtable.sync" version="1.0.0"/>
 	<!--import addon="script.module.addon.common" version="2.0.1"/-->
 	<!-- import addon="repository.kepweng2.0" version="0.0.1"/>
 	<import addon="repository.jsergio" version="1.0.4"/>
 	<import addon="repository.totalrevolution" version="1.0"/ -->
 </requires>
 <extension point="xbmc.python.pluginsource"
-			library="kflix.py">
+			library="default.py">
 		<provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
+<extension point="xbmc.gui.skin" defaultresolution="1080i" defaulttheme="Default">
+    <dir>resources/skin</dir>
+</extension>
+
+
 <summary lang="en"></summary>
 <description lang="en"></description>
 <platform>all</platform>
 <language>en</language>
-<license>GNU PUBLIC LICENSE. version 2, june 1991</license>
 <assets>
 <icon>icon.png</icon>
 <fanart>fanart.jpg</fanart>      

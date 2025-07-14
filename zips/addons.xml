@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon 	id="plugin.video.kapihan" name="KAPIHAN" version="0.1.6.1" provider-name="BATHALA TRIBU">
+<addon id="plugin.airtable.sync"
+       name="Airtable Sync Background"
+       version="1.0.0"
+       provider-name="YourName">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+        <import addon="script.module.beautifulsoup4" version="4.12.2"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py" start="startup">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Background Airtable Sync</summary>
+        <description>Scrapes episodes and syncs to Airtable every hour.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon 	id="plugin.video.kapihan" name="KAPIHAN" version="0.1.7" provider-name="BATHALA TRIBU">
 <requires>
 	<!-- import addon="xbmc.python" version="3.0.0"/> -->
 	<import addon="script.module.resolveurl" version="5.1.92"/>
 	<import addon="script.module.requests" version="2.22.0"/>
 	<import addon="script.module.beautifulsoup4" version="4.12.2"/>
+	<import addon="plugin.airtable.sync" version="1.0.0"/>
 	<!--import addon="script.module.addon.common" version="2.0.1"/-->
 	<!-- import addon="repository.kepweng2.0" version="0.0.1"/>
 	<import addon="repository.jsergio" version="1.0.4"/>
