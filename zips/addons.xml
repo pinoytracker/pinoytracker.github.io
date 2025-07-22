@@ -19,13 +19,12 @@
     </extension>
 </addon>
 
-<addon 	id="plugin.video.kapihan" name="KAPIHAN" version="0.1.7" provider-name="BATHALA TRIBU">
+<addon 	id="plugin.video.kapihan" name="KAPIHAN" version="0.1.7.1" provider-name="BATHALA TRIBU">
 <requires>
 	<!-- import addon="xbmc.python" version="3.0.0"/> -->
 	<import addon="script.module.resolveurl" version="5.1.92"/>
 	<import addon="script.module.requests" version="2.22.0"/>
 	<import addon="script.module.beautifulsoup4" version="4.12.2"/>
-	<import addon="plugin.airtable.sync" version="1.0.0"/>
 	<!--import addon="script.module.addon.common" version="2.0.1"/-->
 	<!-- import addon="repository.kepweng2.0" version="0.0.1"/>
 	<import addon="repository.jsergio" version="1.0.4"/>
